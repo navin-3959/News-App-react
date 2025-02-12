@@ -3,7 +3,7 @@ import { Component } from "react";
 
 export class Newsitem extends Component {
   render() {
-    let { title, description, imgurl, newsurl } = this.props; // Fixed prop names
+    let { title, description, imgurl, newsurl } = this.props; 
 
     return (
       <div className="my-3">
@@ -12,7 +12,7 @@ export class Newsitem extends Component {
           <div className="card-body">
             <h5 className="card-title">{title}...</h5>
             <p className="card-text">{description}...</p>
-            <a href={newsurl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            <a href={newsurl} target="_blank" rel="noopener noreferrer" className="btn btn-dark">
               Read More
             </a>
           </div>
