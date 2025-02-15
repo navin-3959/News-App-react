@@ -1,10 +1,8 @@
 /* eslint-disable react/prop-types */
-import { Component } from "react";
 
-export class Newsitem extends Component {
-  render() {
-    let { title, description, imgurl, newsurl, author , date } = this.props; 
-   
+const  Newsitem =(props)=> {
+ 
+    let { title, description, imgurl, newsurl, author , date } = props; 
     return (
       <div className="my-3">
         <div className="card" style={{ width: "18rem" }}>
@@ -21,6 +19,6 @@ export class Newsitem extends Component {
       </div>
     );
   }
-}
+
 
 export default Newsitem;
