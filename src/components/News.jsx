@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback } from "react";
 import PropTypes from "prop-types";
 
 import Newsitem from "./Newsitem";
-import Spiner from "./spiner";
+import Spiner from "./Spiner";
 
 const News = ({ category, pageSize, setprogress, apiKey }) => {
     const [articles, setArticles] = useState([]);
